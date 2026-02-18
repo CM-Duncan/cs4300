@@ -1,6 +1,4 @@
-"
-Caroline Duncan, 2/12/26
- "
+"Caroline Duncan, 2/11/26, defines three simple functions that each return a hardcoded value of a different python data type"
 
 def get_integer():
     return 42
