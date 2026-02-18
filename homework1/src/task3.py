@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/11/26, defines functions to classify a number as positive, negative, or zero, and to generate a list of the first ten prime numbers. "
 def check_number(n):
     if n > 0:
         return "positive"
