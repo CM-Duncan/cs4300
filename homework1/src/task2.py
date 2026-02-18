@@ -1,3 +1,7 @@
+"
+Caroline Duncan, 2/12/26
+ "
+
 def get_integer():
     return 42
 
