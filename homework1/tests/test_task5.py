@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/13/26,  checks: the number of books returned, that each book has the required title and author fields, and the structure of the student database. "
 from src.task5 import get_favorite_books, get_first_three_books, get_student_database
 
 def test_favorite_books_length():
