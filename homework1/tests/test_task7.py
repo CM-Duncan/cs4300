@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/14/26, checking that keys are generated as bytes and that messages can be properly encrypted and decrypted"
 from src.task7 import generate_key, encrypt_message, decrypt_message
 
 def test_generate_key():

@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/14/26, generate an encryption key and encrypt a message using the Fernet symmetric encryption library "
 from cryptography.fernet import Fernet
 
 def generate_key():
