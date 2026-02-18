@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/13/26, returns a hardcoded list of five classic books, each represented as a dictionary "
 def get_favorite_books():
     books = [
         {"title": "To Kill a Mockingbird", "author": "Harper Lee"},
