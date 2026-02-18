@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/11/12"
 from src.task1 import hello_world
 
 def test_hello_world(capsys):
