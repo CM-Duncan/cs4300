@@ -13,10 +13,13 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+Caroline Duncan, 2/28/26, defines the URL routing for project
 """
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('bookings.urls')),
+    path('', include('bookings.template_urls')),
 ]
