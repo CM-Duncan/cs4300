@@ -1,11 +1,9 @@
 from behave import given, when, then
-from django.test import Client
-from django.contrib.auth.models import User
-from bookings.models import Movie, Seat, Booking
 import datetime
 
 @given('the database has movies')
 def step_database_has_movies(context):
+    from bookings.models import Movie
     context.movie = Movie.objects.create(
         title="Test Movie",
         description="A test movie",
@@ -15,6 +13,7 @@ def step_database_has_movies(context):
 
 @when('I visit the movie list page')
 def step_visit_movie_list(context):
+    from django.test import Client
     context.client = Client()
     context.response = context.client.get('/')
 
@@ -25,6 +24,9 @@ def step_see_movie_list(context):
 
 @given('I am logged in')
 def step_logged_in(context):
+    from django.test import Client
+    from django.contrib.auth.models import User
+    from bookings.models import Movie
     context.client = Client()
     context.user = User.objects.create_user(
         username='testuser',
@@ -40,6 +42,7 @@ def step_logged_in(context):
 
 @given('there is an available seat')
 def step_available_seat(context):
+    from bookings.models import Seat
     context.seat = Seat.objects.create(
         seat_number="A1",
         is_booked=False
@@ -59,6 +62,7 @@ def step_seat_is_booked(context):
 
 @given('I have an existing booking')
 def step_existing_booking(context):
+    from bookings.models import Seat, Booking
     seat = Seat.objects.create(seat_number="B1", is_booked=True)
     context.booking = Booking.objects.create(
         movie=context.movie,
