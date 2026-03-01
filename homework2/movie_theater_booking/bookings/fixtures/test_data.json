@@ -1,0 +1,68 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "testuser",
+      "password": "pbkdf2_sha256$600000$test$testpasswordhash",
+      "email": "test@example.com",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "bookings.movie",
+    "pk": 1,
+    "fields": {
+      "title": "Inception",
+      "description": "A mind-bending thriller about dreams.",
+      "release_date": "2010-07-16",
+      "duration": 148
+    }
+  },
+  {
+    "model": "bookings.movie",
+    "pk": 2,
+    "fields": {
+      "title": "The Dark Knight",
+      "description": "Batman faces the Joker in Gotham City.",
+      "release_date": "2008-07-18",
+      "duration": 152
+    }
+  },
+  {
+    "model": "bookings.seat",
+    "pk": 1,
+    "fields": {
+      "seat_number": "A1",
+      "is_booked": false
+    }
+  },
+  {
+    "model": "bookings.seat",
+    "pk": 2,
+    "fields": {
+      "seat_number": "A2",
+      "is_booked": false
+    }
+  },
+  {
+    "model": "bookings.seat",
+    "pk": 3,
+    "fields": {
+      "seat_number": "B1",
+      "is_booked": true
+    }
+  },
+  {
+    "model": "bookings.booking",
+    "pk": 1,
+    "fields": {
+      "movie": 1,
+      "seat": 3,
+      "user": 1,
+      "booking_date": "2024-01-01T12:00:00Z"
+    }
+  }
+]
