@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-8ft$8ij8z+1wr((h-=6g_nv52^5u*y&#hicel-@$g2^&q1a_^z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://movie-theater-booking-a04d.onrender.com', '*']
 
 
 # Application definition
