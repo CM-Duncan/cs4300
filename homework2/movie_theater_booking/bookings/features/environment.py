@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/28/26,  sets up and tears down a Django test database for the BDD test suite. It creates a fresh test database before all tests, loads fixture data before each scenario, and cleans up all records after each scenario "
 import os
 import django
 

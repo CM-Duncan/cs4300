@@ -1,3 +1,4 @@
+# Caroline Duncan, 2/28/26, defines step definitions that map plain-English Gherkin test scenarios to Django test actions
 Feature: Movie Booking
 
   Scenario: User views movie list

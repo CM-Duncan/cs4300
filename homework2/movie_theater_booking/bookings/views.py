@@ -1,4 +1,4 @@
-"Caroline Duncan, 2/28/26, sets up a rest api endpoint that lets authenticated-or-open users perform full CRUD operations on movie objects "
+"Caroline Duncan, 2/27/26, sets up a rest api endpoint that lets authenticated-or-open users perform full CRUD operations on movie objects "
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated

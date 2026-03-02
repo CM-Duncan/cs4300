@@ -1,3 +1,4 @@
+"Caroline Duncan, 3/1/26, defines the configuration for the bookings "
 from django.apps import AppConfig
 
 

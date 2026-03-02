@@ -1,10 +1,10 @@
+"Caroline Duncan, 2/28/26, defines three URL routes for the bookings app, mapping the movie list page, and a seat booking page "
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
 from bookings.models import Movie, Seat, Booking
 import datetime
 
-# ---- UNIT TESTS ----
-
+# Unit tests
 class MovieModelTest(TestCase):
     def setUp(self):
         self.movie = Movie.objects.create(
@@ -61,8 +61,7 @@ class BookingModelTest(TestCase):
         self.assertEqual(self.booking.seat, self.seat)
 
 
-# ---- INTEGRATION TESTS ----
-
+#Integration tests
 class MovieAPITest(TestCase):
     def setUp(self):
         self.client = Client()

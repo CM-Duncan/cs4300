@@ -1,4 +1,4 @@
-"Caroline Duncan, 2/28/26  "
+"Caroline Duncan, 2/28/26, defines three URL routes for the bookings app, mapping the movie list page, a seat booking page "
 from django.urls import path
 from . import views
 

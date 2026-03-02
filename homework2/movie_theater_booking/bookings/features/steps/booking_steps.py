@@ -1,3 +1,4 @@
+"Caroline Duncan, 2/28/26,tests three user flows in the movie website,viewing a movie list, booking a seat, and viewing booking history."
 from behave import given, when, then
 
 @given('the database has movies')
