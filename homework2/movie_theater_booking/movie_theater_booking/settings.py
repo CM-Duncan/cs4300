@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ft$8ij8z+1wr((h-=6g_nv52^5u*y&#hicel-@$g2^&q1a_^z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://movie-theater-booking-a04d.onrender.com', '*']
+ALLOWED_HOSTS = ['https://movie-theater-booking-a04d.onrender.com', '*', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -134,3 +134,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+CSRF_TRUSTED_ORIGINS = [
+    'https://movie-theater-booking-a04d.onrender.com',
+    'https://app-caroline-21.devedu.io',
+    'https://*.devedu.io',
+]
