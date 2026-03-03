@@ -26,9 +26,14 @@
 <nav class="navbar navbar-dark px-4 py-3">
     <a class="navbar-brand fs-4 fw-bold" href="/">🎬 Movie Theater</a>
     <div>
-        <a class="btn btn-dark me-2" href="/">Movies</a>
-        <a class="btn btn-dark" href="/bookings/history/">My Bookings</a>
-    </div>
+    <a class="btn btn-dark me-2" href="/">Movies</a>
+    <a class="btn btn-dark me-2" href="/bookings/history/">My Bookings</a>
+    {% if user.is_authenticated %}
+        <a class="btn btn-dark" href="/logout/">Logout</a>
+    {% else %}
+        <a class="btn btn-dark" href="/login/">Login</a>
+    {% endif %}
+</div>
 </nav>
 <div class="container mt-4">
     {% block content %}{% endblock %}
